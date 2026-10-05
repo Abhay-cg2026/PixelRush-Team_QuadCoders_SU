@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MealMitra - Student Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+<!-- BEGIN: MainHeader -->
+<header class="brand-header" data-purpose="brand-identity">
+<div class="brand-logo-icon">
+<!-- Minimalist Tiffin/Bento Icon -->
+<svg viewbox="0 0 24 24">
+<path d="M7 3h10M12 3v3M5 6h14a2 2 0 0 1 2 2v3H3V8a2 2 0 0 1 2-2zM3 11h18v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7zM3 15h18"></path>
+</svg>
+</div>
+<div class="brand-text-wrap">
+<div class="brand-title-row">
+<span class="brand-title">MealMitra</span>
+<span class="brand-tag">TiffinBox</span>
+</div>
+<span class="brand-tagline">Ghar Ka Khana, Daily</span>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: LoginCard -->
+<main class="login-card" data-purpose="auth-container">
+<!-- Header Block inside Card -->
+<div class="card-header-block">
+<span class="badge-pill">STUDENT SIGN UP</span>
+<h1 class="card-heading">Login Here</h1>
+<p class="card-subheading">Welcome Back to Our MealMitra Again</p>
+</div>
+<!-- Login Form -->
+<form action="#" data-purpose="student-login-form" method="POST">
+<!-- Mobile Number Field -->
+<div class="form-group">
+<label class="form-label" for="mobile-input">Mobile Number</label>
+<div class="phone-input-row">
+<div aria-label="Country Code India" class="country-code-box">
+<!-- Simulated Indian Tricolor stripes -->
+<span class="flag-icon" style="display:flex; flex-direction:column; width:14px; height:10px; border-radius:1px; overflow:hidden; border: 1px solid #cbd5e1;">
+<span style="height:3.3px; background-color:#ff9933; width:100%;"></span>
+<span style="height:3.3px; background-color:#ffffff; width:100%; display:flex; align-items:center; justify-content:center;">
+<span style="width:2px; height:2px; background-color:#000088; border-radius:50%;"></span>
+</span>
+<span style="height:3.3px; background-color:#138808; width:100%;"></span>
+</span>
+<span>+91</span>
+</div>
+<input class="phone-input" id="mobile-input" name="mobile" placeholder="Enter mobile number" required="" type="tel" value="98110 49521"/>
+</div>
+</div>
+<!-- Food Preference Selection -->
+<div class="form-group">
+<label class="form-label">Primary Food Preference</label>
+<div aria-label="Primary Food Preference" class="preference-grid" role="radiogroup">
+<!-- Option 1: 100% Pure Veg (Checked/Active) -->
+<label class="pref-option active">
+<input checked="" name="preference" type="radio" value="pure-veg"/>
+<div class="pref-card">
+<span aria-label="Pure Veg" class="pref-emoji" role="img">🥗</span>
+<span class="pref-title">100% Pure Veg</span>
+</div>
+</label>
+<!-- Option 2: Eggitarian -->
+<label class="pref-option">
+<input name="preference" type="radio" value="eggitarian"/>
+<div class="pref-card">
+<span aria-label="Eggitarian" class="pref-emoji" role="img">🥚</span>
+<span class="pref-title">Eggitarian</span>
+</div>
+</label>
+<!-- Option 3: Non-Veg -->
+<label class="pref-option">
+<input name="preference" type="radio" value="non-veg"/>
+<div class="pref-card">
+<span aria-label="Non-Veg" class="pref-emoji" role="img">🍗</span>
+<span class="pref-title">Non-Veg (2 days)</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Submit CTA Button -->
+<button class="btn-submit" type="submit">
+        Click Here To Login
+      </button>
+</form>
+<!-- Terms & Condition Checkbox Line -->
+<label class="terms-row">
+<span class="custom-checkbox"></span>
+<span class="terms-text">
+        I agree to MealMitra's <a class="terms-link" href="#">Terms of Service</a> &amp; <a class="terms-link" href="#">Hygiene Policy</a>.
+      </span>
+</label>
+<!-- OR Divider -->
+<div class="divider-wrap">
+<div class="divider-line"></div>
+<span class="divider-text">OR</span>
+</div>
+<!-- Google Social Login Button -->
+<a class="btn-google" href="#" role="button">
+<!-- Standard SVG Google "G" Logo -->
+<svg class="google-icon" viewbox="0 0 24 24">
+<path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.65v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.14z" fill="#4285F4"></path>
+<path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z" fill="#34A853"></path>
+<path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+<path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+</svg>
+<span>Continue with Google</span>
+</a>
+<!-- Footer Redirect Link -->
+<div class="card-footer">
+      New In Our Page ? Then , For Create Your Account <a class="card-footer-link" href="#">Click Here</a>
+</div>
+</main>
+<!-- END: LoginCard -->
+</body>
+</html>
